@@ -9,7 +9,6 @@ body {
 img {
     width: 100%;
     max-width: 100%;
-    display: bloсk;
 }
 
 a {
@@ -49,8 +48,14 @@ main {
     margin: 50px auto;
 }
 
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 /* Action style */
-.action {
+.fetch {
+    width: fit-content;
     background-color: #66BB6A;
     font-size: 16px;
     padding: 10px 20px;
@@ -58,7 +63,7 @@ main {
     margin: 10px 0;
 }
 
-.action:hover {
+.fetch:hover {
     background-color: #4CAF50;
 }
 
@@ -126,14 +131,14 @@ figcaption {
     bottom: 0;
     right: 0;
     background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
+    z-index: 1;
 }
 
 .popup.open {
     visibility: visible;
 }
 
-.action {
+.action.close {
     position: absolute;
     top: 50px;
     right: 50px;
