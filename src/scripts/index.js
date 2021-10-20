@@ -7,7 +7,7 @@ const container = document.querySelector('.images');
 
 const popup = document.querySelector('.popup');
 const popupContainer = document.querySelector('.popup .content');
-const popupClose = document.querySelector('.popup .action');
+const popupClose = document.querySelector('.popup .close');
 const loader = document.querySelector('.loader');
 
 const MAX_PAGE_IMAGES = 34;
@@ -154,7 +154,7 @@ const togglePopup = function () {
 const actionHandler = function (evt) {
     evt.preventDefault();
     const nextPage = parseInt(evt.currentTarget.dataset.page);
-    evt.currentTarget.dataset.page = `${nextPage + 1}`;
+    evt.currentTarget.dataset.page = `${nextPage +1}`;
     if (nextPage > MAX_PAGE_IMAGES) {
         evt.currentTarget.disabled = true;
         console.warn(`WARN: You are trying to call a page that exceeds ${MAX_PAGE_IMAGES}`);

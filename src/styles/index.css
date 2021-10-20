@@ -150,6 +150,10 @@ figcaption {
     border-radius: 50%;
 }
 
+.close:hover {
+    color: #656565;
+}
+
 .popup .content {
     width: 100%;
     margin: auto;
